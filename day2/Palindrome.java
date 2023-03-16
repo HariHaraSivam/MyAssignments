@@ -1,18 +1,17 @@
-package week1.day2;
+package week3.day2;
 
 public class Palindrome {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-int num = 34343, temp = 0;
-int number = num;
-for (int i = 0; i <5; i++) {
-	temp = temp*10 + num%10;
-	num = num/10;
+String s= "madam", rev = "";
+for (int i = s.length()-1; i  >= 0; i--) {
+	rev += s.charAt(i);
 }
-if (temp == number) {
-	System.out.println("Number is palindrome");
+System.out.println(rev);
+if(s.equals(rev)) {
+	System.out.println("It is palindrome");
 }
-	}
+}
 
 }
